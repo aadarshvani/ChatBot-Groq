@@ -1,0 +1,68 @@
+# Core Framework
+fastapi
+uvicorn
+streamlit
+pydantic
+python-dotenv
+requests
+
+# LangChain Core Framework
+langchain
+langchain-core
+langchain-text-splitters
+langchain-community
+
+# LangChain Integrations
+langchain-openai
+langchain-anthropic
+google-generativeai
+langchain-fireworks
+langchain-mistralai
+langchain-groq
+
+# LangGraph and LangSmith
+langgraph
+langsmith
+langserve
+
+# LLM Integration
+openai
+anthropic
+cohere
+tiktoken
+
+# Embeddings
+sentence-transformers
+
+# Vector Database
+chromadb
+# faiss-cpu==1.7.4  # Uncomment if needed
+# pinecone-client==2.2.4  # Uncomment if needed
+
+# YouTube API
+google-api-python-client
+youtube-transcript-api
+
+# Document Processing
+pypdf2
+python-docx
+unstructured
+
+# Database
+sqlalchemy
+aiosqlite
+
+# LangChain Agents and Tools
+langchain-experimental
+langchain-chroma
+
+# Utilities
+numpy
+pandas
+tqdm
+pyyaml
+tenacity
+jsonschema
+
+# Logging
+loguru
