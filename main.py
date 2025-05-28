@@ -7,16 +7,6 @@ from langchain_core.prompts import ChatPromptTemplate
 
 load_dotenv()
 
-langchain_key = os.getenv('LANGCHAIN_API_KEY')
-
-if langchain_key:
-    os.environ['LANGCHAIN_API_KEY'] = langchain_key
-    os.environ['LANGCHAIN_TRACING_V2'] = os.getenv('LANGCHAIN_TRACING_V2', 'true')
-    os.environ['LANGCHAIN_PROJECT'] = os.getenv('LANGCHAIN_PROJECT', 'Groq ChatBot')
-else:
-    st.error("LANGCHAIN_API_KEY not found. Please ensure it's set correctly in the .env file.")
-    st.stop()
-
 prompt = ChatPromptTemplate.from_messages(
     [
         ('system', 'You are a helpful assistant. Please response to the user queries'),
@@ -78,4 +68,4 @@ st.markdown("---")
 st.markdown(
     "<p style='text-align: center; color: gray; font-size: 14px;'>Made by <a href='https://www.linkedin.com/in/aadarsh-vani-a60a641a0/' target='_blank' style='text-decoration:none; color:#4B8BBE;'>Aadarsh Vani</a></p>",
     unsafe_allow_html=True,
-)
+) 
